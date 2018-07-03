@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+
+    <!-- jQuery (for tooltipster) -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <!-- Fontawesome (for icons) -->
+    <script src="https://kit.fontawesome.com/2093be076c.js" crossorigin="anonymous"></script>
+
+    <!-- Tooltipster bc why re-invent the wheel? -->
+    <link rel="stylesheet" type="text/css" href="js/dist/css/tooltipster.bundle.min.css"/>
+    <script type="text/javascript" src="js/dist/js/tooltipster.bundle.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.detail-item').tooltipster({
+                animation: 'grow',
+                trigger: 'hover',
+                theme: 'tooltipster-borderless',
+                maxWidth: 300
+            });
+        });
+    </script>
+
+    <!-- Bit of banter really -->
+    <script src="js/banter.js"></script>
+
+    <!-- title -->
+    <title>Lucas Bruck</title>
+</head>
+<body>
+<div class="main-page-section" id="home">
+    <div class="site-title">
+        <h1>Lucas Bruck</h1>
+        <div class="subtitle">
+            <h3 class="subtitle-entry"><a href="https://github.com/lucasob"><i class="fab fa-github-square"></i></i></a>
+            </h3>
+            <h3 class="subtitle-entry"><a href="https://www.linkedin.com/in/lucas-bruck-189361114/"><i
+                    class="fab fa-linkedin"></i></a></h3>
+            <h3 class="subtitle-entry"><a
+                    href="https://futsalaustralia.org.au/2019/04/15/2019-australian-national-futsal-mens-team/"><i
+                    class="far fa-futbol"></i></i></a></h3>
+        </div>
+    </div>
+</div>
+<div class="main-page-section" id="about">
+    <div class="main-page-container" id="about-container">
+        <div class="main-page-column" id="face-container">
+            <img src="img/lucas.png" alt="Not me, my (imaginary) identical twin, Sacul" class="face"/>
+        </div>
+        <div class="main-page-column">
+            <h1 class="column-title">About Me</h1>
+            <div class="content blurb">
+                Hey, my name's Lucas and I'm a pretty big fan of writing code; I think there's something to be said for
+                elegant solutions to complex problems. I love simplicity and have a weird affinity for TypeScript (I
+                honestly
+                don't know why). That's plenty for now, scroll down to to see some of the delicious things I've worked
+                on,
+                or get in touch to know more.
+            </div>
+        </div>
+    </div>
+</div>
+<div class="main-page-section">
+    <div class="page-title">
+        <h1>Experience</h1>
+    </div>
+    <div class="main-page-container">
+        <div class="experience-grid">
+            <div class="tile" id="g1">
+                <div class="tile-column">
+                    <img class="exp-logo" src="img/crewman_four.png">
+                </div>
+                <div class="tile-column">
+                    <h3>
+                        <a href="https://crewmanfour.com/">Crewman Four</a>
+                    </h3>
+                    <div class="exp-detail">
+                        <div class="detail-item" data-tooltip-content="#cmf-react"><i class="fab fa-react"></i></div>
+                        <div class="detail-item" data-tooltip-content="#cmf-heroku"><i class="fas fa-cloud"></i></div>
+                        <div class="detail-item" data-tooltip-content="#cmf-kotlin"><i class="fab fa-java"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="tile" id="g2">
+                <div class="tile-column">
+                    <img class="exp-logo" src="img/sdl.png">
+                </div>
+                <div class="tile-column">
+                    <h3>
+                        <a href="https://mycelium.ventures">Mycelium Ventures<br/><small>(Secure Data Links)</small></a>
+                    </h3>
+                    <div class="exp-detail">
+                        <div class="detail-item" data-tooltip-content="#sdl-react"><i class="fab fa-react"></i></div>
+                        <div class="detail-item" data-tooltip-content="#sdl-node"><i class="fab fa-node-js"></i></div>
+                        <div class="detail-item" data-tooltip-content="#sdl-docker"><i class="fab fa-docker"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="tile" id="g3">
+                <div class="tile-column">
+                    <img class="exp-logo" src="img/macquarie.png">
+                </div>
+                <div class="tile-column">
+                    <h3>
+                        <a href="https://www.macquarie.com/au/en.html">Macquarie Group</a>
+                    </h3>
+                    <div class="exp-detail">
+                        <div class="detail-item" data-tooltip-content="#mac-angular"><i class="fab fa-angular"></i>
+                        </div>
+                        <div class="detail-item" data-tooltip-content="#mac-build"><i class="fas fa-hammer"></i></div>
+                        <div class="detail-item" data-tooltip-content="#mac-bash"><i class="fas fa-terminal"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="tile" id="g4">
+                <div class="tile-column">
+                    <img class="exp-logo" src="img/brokat.png">
+                </div>
+                <div class="tile-column">
+                    <h3>
+                        <a href="https://brokat.studio/#1">Brokat Studio</a>
+                    </h3>
+                    <div class="exp-detail">
+                        <div class="detail-item" data-tooltip-content="#brk-php"><i class="fab fa-php"></i></div>
+                        <div class="detail-item" data-tooltip-content="#brk-css"><i class="fab fa-css3"></i></div>
+                        <div class="detail-item" data-tooltip-content="#brk-design"><i
+                                class="fas fa-ruler-vertical"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="tile" id="g5">
+                <div class="tile-column">
+                    <img class="exp-logo" src="img/nas.png">
+                </div>
+                <div class="tile-column">
+                    <h3>
+                        <a href="https://www.nas.com.au/">New Age Solutions</a>
+                    </h3>
+                    <div class="exp-detail">
+                        <div class="detail-item" data-tooltip-content="#nas-db"><i class="fas fa-database"></i></div>
+                        <div class="detail-item" data-tooltip-content="#nas-rest"><i class="fas fa-desktop"></i></div>
+                        <div class="detail-item" data-tooltip-content="#nas-auto"><i class="fas fa-robot"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="tile" id="g6">
+                <div class="tile-column">
+                    <img class="exp-logo" src="img/sensahub.png">
+                </div>
+                <div class="tile-column">
+                    <h3>
+                        <a href="https://www.sensahub.com/">Sensahub</a>
+                    </h3>
+                    <div class="exp-detail">
+                        <div class="detail-item" data-tooltip-content="#sen-js"><i class="fab fa-js"></i></div>
+                        <div class="detail-item" data-tooltip-content="#sen-css"><i class="fab fa-css3"></i></div>
+                        <div class="detail-item" data-tooltip-content="#sen-flow"><i class="fas fa-bezier-curve"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="tooltip_templates">
+    <!-- CMF -->
+    <span id="cmf-react">
+            React + Typescript ( ❤ )
+        </span>
+    <span id="cmf-heroku">
+            Deployments delivered using docker containers
+        </span>
+    <span id="cmf-kotlin">
+            JVM + delightful functional constructs in Kotlin.
+        </span>
+
+    <!-- SDL -->
+    <span id="sdl-react">
+            React + JS (aka TypeScript's less impressive cousin).
+        </span>
+    <span id="sdl-node">
+            Startup Fast + Lots of Docs = Node.js
+        </span>
+    <span id="sdl-docker">
+            Deployments delivered using Docker and orchestrated using Kubernetes on GCP.
+        </span>
+
+    <!-- Macquarie -->
+    <span id="mac-angular">
+            Angular JS.
+        </span>
+    <span id="mac-build">
+            Used Bazel, the Google build system and used it to execute builds for extremely large code bases.
+        </span>
+    <span id="mac-bash">
+            Automation and lots of it (also hot tip: fish shell).
+        </span>
+
+    <!-- Brokat -->
+    <span id="brk-php">PHP is still a key player in web-based development, right?</span>
+    <span id="brk-css">
+            <code>display: flex;</code>Need anyone say more?
+        </span>
+    <span id="brk-design">
+            I was often involved in the design process, or completely designed sites or components myself.
+        </span>
+
+    <!-- NAS -->
+    <span id="nas-db">
+            Large scale, enterprise SQL database management and orchestration.
+        </span>
+    <span id="nas-rest">
+            REST webhooks used to integrate various proprietary databases for perfect system syncronisation.
+        </span>
+    <span id="nas-auto">
+            CRON tasks and database triggers for automated data integration and syncronisation.
+        </span>
+
+    <!-- Sensahub -->
+    <span id="sen-js">
+            VanillaJS (the world's greatest JS library).
+        </span>
+    <span id="sen-css">
+            Custom design and straight CSS.
+        </span>
+    <span id="sen-flow">
+            One of the coolest features of Sensahub is its "flow-programming". The ability to create "flows" that manipulate data at each step it takes.
+        </span>
+</div>
+</body>
+</html>
