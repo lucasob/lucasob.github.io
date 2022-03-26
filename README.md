@@ -8,3 +8,10 @@ That's super chill, this is using GitHub Pages to deploy off the `gh-pages` bran
 Not really much value provided in adding the above sentence, but hey, now you know what's up.
 
 Happy stalking 😎
+
+### Resources
+This app uses the [Grommet](https://github.com/grommet/grommet-starter-new-app) React UI Library.
+
+There is an accompanying [Storybook](https://storybook.grommet.io) for convenience.
+
+Grommet also comes with [Icons](https://icons.grommet.io/)
