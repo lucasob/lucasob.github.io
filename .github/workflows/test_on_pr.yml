@@ -1,6 +1,7 @@
 name: Test Portfolio
 on:
   pull_request:
+    action: opened
     branches: [ master ]
 jobs:
   test:
