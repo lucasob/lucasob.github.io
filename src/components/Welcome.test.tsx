@@ -4,5 +4,5 @@ import Welcome from "./Welcome";
 
 test('renders the welcome component', () => {
   render(<Welcome />);
-  expect(screen.getByText(/welcome/i)).toBeInTheDocument();
+  expect(screen.getByText(/Lucas Bruck/i)).toBeInTheDocument();
 });

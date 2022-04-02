@@ -1,28 +1,45 @@
-import {Box, Card, CardBody, Grommet, Text} from "grommet";
-import {Home} from "grommet-icons";
+import {Avatar, Box, Button, Card, CardBody, CardFooter, Heading, Text} from "grommet";
 import React from "react";
+import {Github, Linkedin} from "grommet-icons";
 
-const welcomeTheme = {
-  card: {
-    hover: {container: {elevation: "medium"}},
-    container: {elevation: "small", extend: "transition: all 0.2s ease-in-out;"}
-  },
+
+type CardLinkProps = {
+  icon: JSX.Element;
+  link: string;
 }
+
+const CardLink = ({icon, link}: CardLinkProps) => (
+  <Button icon={icon} hoverIndicator style={{borderRadius: "12px"}} onClick={() => window.open(link)}/>
+)
+
+const SeeMyCode = () => (
+  <CardLink icon={<Github/>} link="https://github.com/lucasob"/>
+)
+
+const SeeLinkedIn = () => (
+  <CardLink icon={<Linkedin />} link="https://www.linkedin.com/in/lucas-bruck-189361114/" />
+)
 
 
 export default function Welcome() {
+
   return (
-    <Grommet theme={welcomeTheme} data-testId="welcome">
-      <Box height="100vh" justify="center" align="center" background="linear-gradient(45deg, #ffb4c4, #003399)">
-        <Card background={{color: "light-5"}} direction="column" justify="center" onClick={() => ({})}>
-          <CardBody pad="large">
-            <Box gap="small" align="center">
-              <Home size="large"/>
-              <Text color="dark-1">Welcome</Text>
-            </Box>
-          </CardBody>
-        </Card>
-      </Box>
-    </Grommet>
+    <Box height="100vh" justify="center" align="center" background="linear-gradient(45deg, #ffb4c4, #fff)" data-testId="welcomeScreen">
+      <Card background={{color: "dark-2"}} direction="column" justify="center" elevation="xlarge">
+        <CardBody pad="medium">
+          <Box align="center" direction="column" justify="center" pad="small">
+            <Avatar size="xlarge" src="/me.jpeg"/>
+            <Heading level="2" size="medium" margin="medium">Lucas Bruck</Heading>
+            <Text size="small" alignSelf="center">Software engineer</Text>
+          </Box>
+        </CardBody>
+        <CardFooter pad="small">
+          <Box direction="row" justify="around" width="100%">
+            <SeeMyCode />
+            <SeeLinkedIn />
+          </Box>
+        </CardFooter>
+      </Card>
+    </Box>
   )
 }

@@ -4,5 +4,5 @@ import App from './App';
 
 test('renders the entire app', () => {
   render(<App />);
-  expect(screen.getByTestId("welcome")).toBeInTheDocument();
+  expect(screen.getByTestId("welcomeScreen")).toBeInTheDocument();
 });
