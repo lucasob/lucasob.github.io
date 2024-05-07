@@ -24,7 +24,7 @@ const SeeLinkedIn = () => (
 export default function Welcome() {
 
   return (
-    <Box height="100vh" justify="center" align="center" background="linear-gradient(45deg, #ffb4c4, #fff)" data-testId="welcomeScreen">
+    <Box height="100vh" justify="center" align="center" background="linear-gradient(45deg, #ffb4c4, #fff)" data-testid="welcomeScreen">
       <Card background={{color: "dark-2"}} direction="column" justify="center" elevation="xlarge">
         <CardBody pad="medium">
           <Box align="center" direction="column" justify="center" pad="small">
