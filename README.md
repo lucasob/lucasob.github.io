@@ -1,17 +1,20 @@
 # Lucas Ostrugač Bruck
 
-### Hey!
-There's a good chance you're here because you're having a look at the code on the `master` branch.
+Welcome to the world's most ✨overkill✨ static website ever!
 
-That's super chill, this is using GitHub Pages to deploy off the `gh-pages` branch which is identical.
+## Building
 
-Not really much value provided in adding the above sentence, but hey, now you know what's up.
+* `npm start` will spin up a local react server
+* `npm test` will run the component tests
 
-Happy stalking 😎
+## Deploying
+
+* This uses Github Pages
+* Once you're happy with what you've got, `npm deploy -- -m 'A message here'`
+    * This will push a commit with the specified message on the gh-pages branch
 
 ### Resources
-This app uses the [Grommet](https://github.com/grommet/grommet-starter-new-app) React UI Library.
 
-There is an accompanying [Storybook](https://storybook.grommet.io) for convenience.
-
-Grommet also comes with [Icons](https://icons.grommet.io/)
+* This app uses the [Grommet](https://github.com/grommet/grommet-starter-new-app) React UI Library.
+  * There is an accompanying [Storybook](https://storybook.grommet.io) for convenience.
+  * Grommet also comes with [Icons](https://icons.grommet.io/)
