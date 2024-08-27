@@ -2,30 +2,28 @@ import {Avatar, Box, Button, Card, CardBody, CardFooter, Heading, Text} from "gr
 import React from "react";
 import {Github, Linkedin, Article} from "grommet-icons";
 
+type LinkProp = {link: string;}
 
-type CardLinkProps = {
-  icon: JSX.Element;
-  link: string;
-}
+type CardLinkProps = { icon: JSX.Element;} & LinkProp
 
 const CardLink = ({icon, link}: CardLinkProps) => (
   <Button icon={icon} hoverIndicator style={{borderRadius: "12px"}} onClick={() => window.open(link)}/>
 )
 
-const SeeMyCode = () => (
-  <CardLink icon={<Github/>} link="https://github.com/lucasob"/>
+const SeeMyCode = (props: LinkProp) => (
+  <CardLink icon={<Github/>} {...props} />
 )
 
-const SeeLinkedIn = () => (
-  <CardLink icon={<Linkedin />} link="https://www.linkedin.com/in/lucas-bruck-189361114/" />
+const SeeLinkedIn = (props: LinkProp) => (
+  <CardLink icon={<Linkedin />} {...props} />
 )
 
-const SeeResume = () => (
-  <CardLink icon={<Article />} link="https://lucasob.notion.site/Lucas-Bruck-0bff624cd77e4b3ebc1883f4fe771803" />
+const SeeResume = (props: LinkProp) => (
+  <CardLink icon={<Article />} {...props} />
 )
 
 
-export default function Welcome() {
+export default function Welcome({resumeLink, linkedIn, githubLink}: {[k in "resumeLink" | "githubLink" | "linkedIn"]: string | undefined}) {
 
   return (
     <Box height="100vh" justify="center" align="center" background="linear-gradient(45deg, #ffb4c4, #fff)" data-testid="welcomeScreen">
@@ -39,9 +37,9 @@ export default function Welcome() {
         </CardBody>
         <CardFooter pad="small">
           <Box direction="row" justify="around" width="100%">
-            <SeeMyCode />
-            <SeeLinkedIn />
-            <SeeResume />
+            {githubLink && <SeeMyCode link={githubLink}/>}
+            {linkedIn && <SeeLinkedIn link={linkedIn}/>}
+            {resumeLink && <SeeResume link={resumeLink}/>}
           </Box>
         </CardFooter>
       </Card>
