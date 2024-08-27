@@ -1,6 +1,6 @@
 import {Avatar, Box, Button, Card, CardBody, CardFooter, Heading, Text} from "grommet";
 import React from "react";
-import {Github, Linkedin} from "grommet-icons";
+import {Github, Linkedin, Article} from "grommet-icons";
 
 
 type CardLinkProps = {
@@ -20,6 +20,10 @@ const SeeLinkedIn = () => (
   <CardLink icon={<Linkedin />} link="https://www.linkedin.com/in/lucas-bruck-189361114/" />
 )
 
+const SeeResume = () => (
+  <CardLink icon={<Article />} link="https://lucasob.notion.site/Lucas-Bruck-0bff624cd77e4b3ebc1883f4fe771803" />
+)
+
 
 export default function Welcome() {
 
@@ -37,6 +41,7 @@ export default function Welcome() {
           <Box direction="row" justify="around" width="100%">
             <SeeMyCode />
             <SeeLinkedIn />
+            <SeeResume />
           </Box>
         </CardFooter>
       </Card>
