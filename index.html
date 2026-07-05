@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lucas Bruck</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(45deg, #ffb4c4, #ffffff);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .card {
+      background: #333333;
+      border-radius: 16px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+      width: 300px;
+      overflow: hidden;
+    }
+
+    .card-body {
+      padding: 36px 28px 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .avatar {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 10px;
+      background: #444;
+    }
+
+    .avatar-fallback {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: #555;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 26px;
+      font-weight: 600;
+      color: #ffb4c4;
+      margin-bottom: 10px;
+    }
+
+    .name {
+      color: #f0f0f0;
+      font-size: 20px;
+      font-weight: 600;
+      letter-spacing: -0.2px;
+    }
+
+    .subtitle {
+      color: #aaaaaa;
+      font-size: 13px;
+    }
+
+    .card-footer {
+      border-top: 1px solid #444;
+      padding: 14px 28px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 4px;
+    }
+
+    .icon-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 42px;
+      height: 42px;
+      border-radius: 10px;
+      color: #aaaaaa;
+      text-decoration: none;
+      font-size: 20px;
+      transition: background 0.15s, color 0.15s;
+    }
+
+    .icon-btn:hover {
+      background: #444;
+      color: #f0f0f0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="card-body">
+      <img
+        class="avatar"
+        src="me.jpeg"
+        alt="Lucas Bruck"
+        onerror="this.outerHTML='<div class=\'avatar-fallback\'>LB</div>'"
+      />
+      <span class="name">Lucas Bruck</span>
+      <span class="subtitle">Software Engineer</span>
+    </div>
+
+    <div class="card-footer">
+      <a class="icon-btn" href="https://github.com/lucasob" target="_blank" rel="noopener" title="GitHub">
+        <i class="bi bi-github"></i>
+      </a>
+      <a class="icon-btn" href="https://www.linkedin.com/in/lucas-bruck-189361114/" target="_blank" rel="noopener" title="LinkedIn">
+        <i class="bi bi-linkedin"></i>
+      </a>
+      <a class="icon-btn" href="https://lucasob.notion.site/Lucas-Bruck-0bff624cd77e4b3ebc1883f4fe771803" target="_blank" rel="noopener" title="Resume">
+        <i class="bi bi-file-earmark-text"></i>
+      </a>
+    </div>
+  </div>
+
+</body>
+</html>
